@@ -44,3 +44,9 @@ img{max-width:100%;display:block}
 @media(max-width:720px){.thinking-photo-wrap{max-width:none}.about-photo{max-width:190px}}
 
 .portrait-photo,.thinking-photo,.about-photo{image-rendering:auto}
+
+.about-card h3{font:400 30px/1.12 var(--serif);margin:0 0 18px;max-width:560px}
+.about-card p{max-width:600px}
+.about-pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 18px}
+.about-pill-row span{font-size:10px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);padding:7px 10px;background:rgba(255,255,255,.28)}
+.about-focus{font-size:13px!important;color:var(--navy)!important;margin-top:18px}
