@@ -594,3 +594,30 @@ button:focus-visible{
 @media(max-width:980px){
   .mode-b-column{width:100%}
 }
+
+
+/* Desktop/tablet TOC grid: 01-04 in 2x2, 05 full width. Mobile stays stacked. */
+@media(min-width:761px){
+  .toc-method{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+  }
+  .toc-step{
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:28px 26px;
+    min-height:100%;
+  }
+  .toc-step.repeat{
+    grid-column:1 / -1;
+  }
+}
+
+@media(max-width:760px){
+  .toc-method{
+    display:block;
+    border-left:0;
+  }
+}
