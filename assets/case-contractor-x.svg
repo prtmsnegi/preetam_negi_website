@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-label="CONTRACTOR X — FRONT HANDOVER & CYCLE TIME cycle time and handover analysis">
+  <style>
+    .bg{fill:#F8F5EE}.navy{fill:#172A3A}.copper{fill:#A65332}.forest{fill:#304936}
+    .title{font:700 28px Arial,sans-serif;letter-spacing:1px;fill:#172A3A}
+    .sub{font:400 15px Arial,sans-serif;fill:#5c6871}.metric{font:700 38px Arial,sans-serif;fill:#172A3A}
+    .metricLabel{font:700 11px Arial,sans-serif;letter-spacing:1.6px;fill:#7b858d}.row{font:600 13px Arial,sans-serif;fill:#172A3A}
+    .track{stroke:#D8D3C9;stroke-width:1}.current{fill:#A65332}.focused{fill:#304936}
+    .ct{font:600 12px Arial,sans-serif;fill:#7b858d}.strong{fill:#304936}.legend{font:600 11px Arial,sans-serif;fill:#5c6871}
+    .handover{font:700 14px Arial,sans-serif;fill:#172A3A}.small{font:400 11px Arial,sans-serif;fill:#7b858d}
+  </style>
+  <rect width="1200" height="650" class="bg"/>
+  <text x="40" y="55" class="title">CONTRACTOR X — FRONT HANDOVER & CYCLE TIME</text>
+  <text x="40" y="82" class="sub">Representative fronts · anonymized · current execution vs resource-consolidated mode</text>
+
+  <text x="700" y="52" class="metricLabel">HANDOVER COMPLETION</text>
+  <text x="700" y="93" class="metric">21% → 61%</text>
+  <text x="930" y="52" class="metricLabel">AVERAGE CT</text>
+  <text x="930" y="93" class="metric">2.38× → 1.08×</text>
+
+  <circle cx="40" cy="128" r="6" class="current"/><text x="55" y="132" class="legend">Current execution</text>
+  <circle cx="175" cy="128" r="6" class="focused"/><text x="190" y="132" class="legend">Focused / consolidated</text>
+  <text x="640" y="132" class="small">Shorter bar = lower cycle-time ratio</text>
+
+  
+      <text x="40" y="196" class="row">Front 01</text>
+      <line x1="170" y1="190" x2="620" y2="190" class="track"/>
+      <rect x="170" y="179" width="93.46153846153847" height="10" rx="5" class="current"/>
+      <rect x="170" y="194" width="86.53846153846153" height="10" rx="5" class="focused"/>
+      <text x="640" y="189" class="ct">1.08×</text>
+      <text x="705" y="204" class="ct strong">1.00×</text>
+    
+      <text x="40" y="242" class="row">Front 02</text>
+      <line x1="170" y1="236" x2="620" y2="236" class="track"/>
+      <rect x="170" y="225" width="421.4423076923077" height="10" rx="5" class="current"/>
+      <rect x="170" y="240" width="86.53846153846153" height="10" rx="5" class="focused"/>
+      <text x="640" y="235" class="ct">4.87×</text>
+      <text x="705" y="250" class="ct strong">1.00×</text>
+    
+      <text x="40" y="288" class="row">Front 03</text>
+      <line x1="170" y1="282" x2="620" y2="282" class="track"/>
+      <rect x="170" y="271" width="300.28846153846155" height="10" rx="5" class="current"/>
+      <rect x="170" y="286" width="86.53846153846153" height="10" rx="5" class="focused"/>
+      <text x="640" y="281" class="ct">3.47×</text>
+      <text x="705" y="296" class="ct strong">1.00×</text>
+    
+      <text x="40" y="334" class="row">Front 04</text>
+      <line x1="170" y1="328" x2="620" y2="328" class="track"/>
+      <rect x="170" y="317" width="128.0769230769231" height="10" rx="5" class="current"/>
+      <rect x="170" y="332" width="86.53846153846153" height="10" rx="5" class="focused"/>
+      <text x="640" y="327" class="ct">1.48×</text>
+      <text x="705" y="342" class="ct strong">1.00×</text>
+    
+      <text x="40" y="380" class="row">Front 05</text>
+      <line x1="170" y1="374" x2="620" y2="374" class="track"/>
+      <rect x="170" y="363" width="194.71153846153845" height="10" rx="5" class="current"/>
+      <rect x="170" y="378" width="86.53846153846153" height="10" rx="5" class="focused"/>
+      <text x="640" y="373" class="ct">2.25×</text>
+      <text x="705" y="388" class="ct strong">1.00×</text>
+    
+      <text x="40" y="426" class="row">Front 06</text>
+      <line x1="170" y1="420" x2="620" y2="420" class="track"/>
+      <rect x="170" y="409" width="160.96153846153845" height="10" rx="5" class="current"/>
+      <rect x="170" y="424" width="86.53846153846153" height="10" rx="5" class="focused"/>
+      <text x="640" y="419" class="ct">1.86×</text>
+      <text x="705" y="434" class="ct strong">1.00×</text>
+    
+      <text x="40" y="472" class="row">Front 07</text>
+      <line x1="170" y1="466" x2="620" y2="466" class="track"/>
+      <rect x="170" y="455" width="175.6730769230769" height="10" rx="5" class="current"/>
+      <rect x="170" y="470" width="86.53846153846153" height="10" rx="5" class="focused"/>
+      <text x="640" y="465" class="ct">2.03×</text>
+      <text x="705" y="480" class="ct strong">1.00×</text>
+    
+      <text x="40" y="518" class="row">Front 08</text>
+      <line x1="170" y1="512" x2="620" y2="512" class="track"/>
+      <rect x="170" y="501" width="191.25" height="10" rx="5" class="current"/>
+      <rect x="170" y="516" width="90.86538461538461" height="10" rx="5" class="focused"/>
+      <text x="640" y="511" class="ct">2.21×</text>
+      <text x="705" y="526" class="ct strong">1.05×</text>
+    
+
+  <line x1="40" y1="585" x2="1160" y2="585" class="track"/>
+  <text x="40" y="618" class="handover">Focus fewer fronts → protect cycle time → complete the handover</text>
+  <text x="40" y="640" class="small">Visual simplification of internal execution analysis. Project and contractor identities removed.</text>
+</svg>
