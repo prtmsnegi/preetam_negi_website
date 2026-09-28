@@ -436,3 +436,84 @@ body{overflow-x:hidden}
 @media(max-width:620px){
   .case-problem{grid-template-columns:1fr;gap:8px}
 }
+
+
+/* Interaction refinement */
+.focus-line>div{
+  position:relative;
+  transition:transform .35s ease, background-color .35s ease;
+}
+.focus-line>div:hover{
+  transform:translateY(-3px);
+}
+.focus-line b{
+  display:inline-block;
+  min-width:20px;
+}
+.focus-line span{
+  display:block;
+  line-height:1.35;
+}
+.contact-actions{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  flex-wrap:wrap;
+}
+.contact-linkedin{
+  color:white;
+  border-bottom-color:rgba(255,255,255,.65);
+}
+
+/* Subtle motion: content enters, then key process elements animate */
+.reveal.visible .focus-line>div{
+  animation:focusStepIn .55s ease both;
+}
+.focus-line>div:nth-of-type(1){animation-delay:.02s}
+.focus-line>div:nth-of-type(2){animation-delay:.09s}
+.focus-line>div:nth-of-type(3){animation-delay:.16s}
+.focus-line>div:nth-of-type(4){animation-delay:.23s}
+.focus-line>div:nth-of-type(5){animation-delay:.30s}
+
+.reveal.visible .compare-track .actual-bar,
+.reveal.visible .compare-track .rc-bar{
+  transform-origin:left center;
+  animation:barGrow .75s cubic-bezier(.2,.7,.2,1) both;
+}
+.reveal.visible .compare-track .plan-bar{
+  transform-origin:left center;
+  animation:barGrow .55s ease both;
+}
+.reveal.visible .handover-tick{
+  animation:handoverPop .35s ease .55s both;
+}
+
+@keyframes focusStepIn{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:none}
+}
+@keyframes barGrow{
+  from{transform:scaleX(0);opacity:.35}
+  to{transform:scaleX(1);opacity:1}
+}
+@keyframes handoverPop{
+  from{opacity:0;transform:scale(.7)}
+  to{opacity:1;transform:scale(1)}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .focus-line>div,
+  .reveal.visible .focus-line>div,
+  .reveal.visible .compare-track .actual-bar,
+  .reveal.visible .compare-track .rc-bar,
+  .reveal.visible .compare-track .plan-bar,
+  .reveal.visible .handover-tick{
+    animation:none!important;
+    transition:none!important;
+  }
+}
+
+@media(max-width:620px){
+  .contact-actions{gap:18px}
+  .focus-line>div{grid-template-columns:22px 1fr}
+}
