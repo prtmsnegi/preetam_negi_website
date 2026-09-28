@@ -516,8 +516,16 @@ body{overflow-x:hidden}
 
 
 /* Mode B context note */
+.mode-b-column{
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+.mode-b-column .mode-b-panel{
+  flex:1;
+}
 .mode-b-context{
-  margin:14px 0 12px;
+  margin:10px 0 0;
   padding:11px 13px;
   border-left:3px solid var(--forest);
   background:rgba(48,73,54,.06);
@@ -581,4 +589,8 @@ button:focus-visible{
 
 @media(prefers-reduced-motion:reduce){
   .button:hover{transform:none}
+}
+
+@media(max-width:980px){
+  .mode-b-column{width:100%}
 }
