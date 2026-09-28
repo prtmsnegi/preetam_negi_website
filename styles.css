@@ -395,3 +395,35 @@ body{overflow-x:hidden}
   .compare-panel{padding:17px 14px}
   .compare-row{grid-template-columns:46px 1fr}
 }
+
+
+/* 2026-09 final declutter pass */
+.brand{gap:0}
+.hero-copy{padding-top:6px}
+.execution{padding-top:62px;padding-bottom:68px}
+.section-heading{margin-bottom:20px}
+.compact-focus{margin-top:42px}
+.subsection-heading h2{margin-bottom:18px}
+.cycle-time{padding-top:58px}
+.cycle-copy h2{margin-bottom:28px}
+.handover-flow{margin-top:0}
+.selected-work{padding-top:64px;padding-bottom:68px}
+.single-case{padding-top:20px}
+.case-summary-line{margin-top:24px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:400 clamp(22px,2.4vw,32px)/1.15 var(--serif)}
+.thinking{padding-top:54px;padding-bottom:54px}
+.thinking-list>div{padding:15px 0}
+.about-section{padding-top:66px;padding-bottom:70px}
+.about-copy h2{margin-bottom:18px}
+.about-copy>p{margin:0 0 14px}
+.contact-section{padding-top:58px;padding-bottom:62px}
+.site-footer{grid-template-columns:1fr auto;padding-top:34px}
+.site-footer blockquote{display:none}
+.site-footer>div:first-child span{display:none}
+.footer-links{grid-column:auto}
+.copyright{grid-column:1/-1;margin-top:16px}
+
+@media(max-width:760px){
+  .case-summary-line{font-size:22px}
+  .site-footer{grid-template-columns:1fr}
+  .footer-links{grid-column:auto}
+}
